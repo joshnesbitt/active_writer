@@ -1,0 +1,19 @@
+= ActiveWriter
+
+Is a really quick and simple way of exporting ActiveRecord objects as CSV's. I'm sure there are plenty of other ways to do this, and this is an attempt at one of them.
+
+Use it like this:
+  
+  writer = CSV::Writer::ActiveRecord.new("csv_name", ["list", "of", "active", "record", "attribiutes", "to", "export"], true)
+  
+The last boolean flag indicates whether to add a header column or not.
+
+Then pass it a collection of objects:
+  
+  csv_stream = writer.write(@collection)
+  
+You might be using this within a Rails application, so push that data out to the user as a file and your golden:
+
+  send_data csv_stream, writer.headers
+  
+Copyright (c) 2009 Josh Nesbitt <josh@josh-nesbitt.net> under MIT-LICENCE.
