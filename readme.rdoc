@@ -1,10 +1,10 @@
 = ActiveWriter
 
-Is a really quick and simple way of exporting ActiveRecord objects as CSV's. I'm sure there are plenty of other ways to do this, and this is an attempt at one of them.
+Is a really quick and simple way of exporting ActiveRecord objects as CSV's. I'm sure there are plenty of other ways to do this...
 
 Use it like this:
   
-  writer = CSV::Writer::ActiveRecord.new("csv_name", ["list", "of", "active", "record", "attribiutes", "to", "export"], true)
+  writer = CSV::Writer::ActiveRecord.new("csv_name", ["list", "of", "activerecord", "attribiutes", "to", "export"], true)
   
 The last boolean flag indicates whether to add a header column or not.
 
