@@ -16,4 +16,4 @@ You might be using this within a Rails application, so push that data out to the
 
   send_data csv_stream, writer.headers
   
-Copyright (c) 2009 Josh Nesbitt <josh@josh-nesbitt.net> under MIT-LICENCE.
+Copyright (c) 2009 Josh Nesbitt <josh@josh-nesbitt.net> under MIT-LICENSE.
